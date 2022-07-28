@@ -7,34 +7,45 @@
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.457);
+    background-color: rgba(28, 28, 28, 0.657);
 }
 body{
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background-image: url(imagens/imagen\ de\ fundo\ da\ Netflix.jpg) ;
+    
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.457);
+    background-color: rgb(0, 0, 0);
+
+    
 }
+@media only screen and (min-width: 640px) {body{
+    background-image: url(imagens/imagen\ de\ fundo\ da\ Netflix.jpg) ;
+}}
+
+
 .logoNetflix    {
     width:110px;
-    height: 37px;
-    margin-left: 25px;
+    height: 3em;
+    margin-left: 10px;
     margin-top: 13px;
 }   
 
 main{
+    
     position:relative;
-    background-color: rgba(0, 0, 0, 0.618)
+    background-color: rgba(0, 0, 0, 0.718)
     ;
     width: 300px;
     height: 440px;
+    
+    border-radius: 10px;
     margin: auto;
 }
+
 #conteudo{
-    position: absolute;
-    margin:40px 45px 40px 45px;
+   
+    margin: auto;
     
     height: 360px;
     width: 210px;
@@ -42,35 +53,40 @@ main{
 h1{
     color: white;
     font-size: 1.3em;
+   padding-top: 25px;
     margin-bottom: 15px;
+    text-indent: 8px;
 }
 .textos{
     
-    width:200px ;
-    height: 37px;
-    margin-bottom: 9px;
+    width:100% ;
+    height: 10%;
+   
     border-radius: 3px;
     background-color: rgb(50, 50, 50);
     border: none;
     outline: none;
     box-sizing: border-box;
     text-align: left;
+    margin: auto;
     text-indent: 5px;
     color: white;
-    font-size: 0.7em;
+    font-size: 0.9em;
+    margin-bottom: 15px;
 }
 #entrar{
     background-color: rgb(241, 20, 20);
     color: white;
-    width:200px ;
-    height: 37px;
+    width:100% ;
+    height: 10%;
     border-radius: 5px;
     border: none;
     outline: none;
     box-sizing: border-box;
-    text-align: center  ;
+    
     cursor: pointer;
     font-size: 12px;
+    margin: auto;
 
 }
 
@@ -78,6 +94,7 @@ h1{
     color: rgb(142, 141, 141);;
     display: inline;
     font-size: 0.6em;
+    margin: auto;
 }
 #check{
     align-items: center;
@@ -85,7 +102,8 @@ h1{
 }
 #precisa{
   text-align:right;
- margin-left: 27px;
+ float: right ;
+ margin-top: 5px;
 }
 #precisa:hover{
     text-decoration: underline;
@@ -109,4 +127,36 @@ h1{
 }
 #last>a{
     color: #0071eb;;
+} 
+
+
+@media only screen and (max-width:640px){
+    main{
+    height: 100vh; 
+    width: 100vw;
+    align-items: center;
+    }
+    #conteudo {
+    height: 100vh; 
+    width: 90vw;
+    
+    
+ }
+   header{
+    background-color: black;
+   }  
+   .textos,#entrar{
+   width: 100%;
+   display: block;
+  
+   
+   }
+   .logoNetflix {
+    width: 90px;
+    height: 30px;
+   }
+   
+   #planoDefundo{
+    background-color: black;
+   }
 }
